@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/house.unity
+    guid: d01dc8444435ec04295ecb37be944050
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
     path: Assets/Scenes/nesq.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
