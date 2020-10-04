@@ -15,6 +15,7 @@ public class detection : MonoBehaviour, ITrackableEventHandler
     #endregion // PROTECTED_MEMBER_VARIABLES
 
     public event Action targetDetected;
+    public event Action targetLost;
 
     #region UNITY_MONOBEHAVIOUR_METHODS
 
@@ -117,6 +118,7 @@ public class detection : MonoBehaviour, ITrackableEventHandler
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
+            targetLost?.Invoke();
         }
     }
 

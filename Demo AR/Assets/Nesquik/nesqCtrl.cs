@@ -10,6 +10,14 @@ public class nesqCtrl : MonoBehaviour
     private void Start()
     {
         dtctnScript.targetDetected += ActivateSmallRigid;
+        dtctnScript.targetLost += DeactivateSmallRig;
+    }
+
+    private void DeactivateSmallRig()
+    {
+        Rigidbody[] rbs = smallPieces.GetComponentsInChildren<Rigidbody>();
+        foreach (var rb in rbs)
+            rb.isKinematic = true;
     }
 
     private void ActivateSmallRigid()
@@ -17,7 +25,7 @@ public class nesqCtrl : MonoBehaviour
         Rigidbody[] rbs = smallPieces.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)
             rb.isKinematic = false;
-        dtctnScript.targetDetected -= ActivateSmallRigid;
+        //dtctnScript.targetDetected -= ActivateSmallRigid;
         StartCoroutine(PlayBigAni());
     }
 
