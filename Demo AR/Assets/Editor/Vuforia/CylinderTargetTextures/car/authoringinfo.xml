@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VuforiaUnityInfo version="7.0">
+    <TargetSet version="5.0" toolVersion="2.8.0">
+        <CylinderTarget name="coca_cola" version="3.0" targetId="121ea1c53dbe4cfa9a1b288418c5e3bd" sideLength="5.800000" topDiameter="8.000000" bottomDiameter="8.000000" sideImage="coca_cola.Body_scaled.jpg"/>
+    </TargetSet>
+</VuforiaUnityInfo>
