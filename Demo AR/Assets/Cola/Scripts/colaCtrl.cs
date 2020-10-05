@@ -10,14 +10,13 @@ public class colaCtrl : MonoBehaviour
     void Start()
     {
         dtcnScript.onTargetFound += StartAnimation;
-        dtcnScript.onTargetLost += StopAnimation;
+        //dtcnScript.onTargetLost += StopAnimation;
             
     }
 
     private void StartAnimation()
     {
         cola.Play("drive");
-        cola.StartPlayback();
     }
 
     private void StopAnimation()
